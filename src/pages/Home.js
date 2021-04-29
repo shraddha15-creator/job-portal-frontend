@@ -15,8 +15,11 @@ const Home = ({ allJobs }) => {
                 </div>
 
             </div>
-            <div className="w-4/5 h-auto space-y-4">
+            <div className="w-2/5 h-auto space-y-4">
                 {allJobs.map(job => <JobCard job={job} key={job.id}/>)}
+            </div>
+            <div className="w-2/5 h-auto space-y-4">
+                Srikanth Section JobDetails component
             </div>
         </div>
     </div>)
