@@ -1,30 +1,52 @@
 export const JOBS_DATA = [
+    
     {
-        id: 1,
-        jobTitle: "Fronted Developer",
-        companyName: "IA Labs",
-        companyLogo: "ialabs.png",
-        skills: ["React", "Node", "Javascript"]
+        jobTitle:"UI/UX Designer",
+        companyName:"Clevertech",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
+    },
+    
+    {
+        jobTitle:"Front End Developer",
+        companyName:"IA Labs",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
     },
     {
-        id: 2,
-        jobTitle: "Full Stack Developer",
-        companyName: "IA Labs",
-        companyLogo: "ialabs.png",
-        skills: ["React", "Node", "Javascript"]
+        jobTitle:"Full stack Developer",
+        companyName:"IA Labs",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
     },
     {
-        id: 3,
-        jobTitle: "Backend Developer",
-        companyName: "IA Labs",
-        companyLogo: "ialabs.png",
-        skills: ["React", "Node", "Javascript"]
+        jobTitle:"Back End Developer",
+        companyName:"IA Labs",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
     },
     {
-        id: 4,
-        jobTitle: "Devops Developer",
-        companyName: "IA Labs",
-        companyLogo: "ialabs.png",
-        skills: ["React", "Node", "Javascript"]
+        jobTitle:"Devops Developer",
+        companyName:"IA Labs",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
+    },
+    {
+        jobTitle:"Devops Developer",
+        companyName:"IA Labs",
+        logo:"ialab.png",
+        details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
+        skills: [ "React", "Javascript", "html", "css"],
+        employees: "50-100 Employees"
     }
 ]

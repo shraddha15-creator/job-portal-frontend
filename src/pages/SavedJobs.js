@@ -1,5 +1,6 @@
 import { connect } from "react-redux"
-import JobCard from "../components/JobCard"
+import { JobCard } from "../components/JobCard";
+
 
 const SavedJobs = ({ savedJobs }) => {
     return (<div className="w-4/5 h-auto space-y-4">
