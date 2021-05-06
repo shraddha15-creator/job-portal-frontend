@@ -1,9 +1,10 @@
 import { Header } from "../components/Header";
+import Jobs from "./addJobs";
 import { Applications } from "./Applications";
 import { Assesments } from "./Assessments";
 import Home from "./Home";
 import SavedJobs from "./SavedJobs";
-const { Switch, Route } = require("react-router");
+const { Switch, Route, Router } = require("react-router");
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/saved" component={SavedJobs} />
+        <Router path="/jobs" component={Jobs}/>
         <Route path="/applications" component={Applications} />
         <Route path="/assesments" component={Assesments} />
       </Switch>
