@@ -46,9 +46,9 @@ const Jobs = () => {
                     <div className='flex pt-5 '>
                         <lable className='font-semibold pt-3 ml-10'>Job Title</lable>
                         <input
-                            className='bg-gray-50 h-16 rounded shadow w-2/5 ml-52 text-center text-lg text-gray-300 '
+                            className='bg-gray-50 h-16 rounded shadow w-2/5 ml-52 text-center text-lg  '
                             type='text'
-                            value='UX Designer, Python Developer, Business Developer  etc.'
+                            placeholder='UX Designer, Python Developer, Business Developer  etc.'
                         />
                     </div>
                     <div className='flex pt-10 justify-bet '>
@@ -58,19 +58,19 @@ const Jobs = () => {
                         <div className='ml-40 space-x-12'>
                             <input
                                 className='bg-gray-50 h-16 rounded shadow  w-52 text-center  '
-                                value='Full Time Employee'
+                                placeholder='Full Time Employee'
                             />
                             <input
                                 className='bg-gray-50 h-16 rounded shadow  w-52 text-center '
-                                value='Contract Based'
+                                placeholder='Contract Based'
                             />
                             <input
                                 className='bg-gray-50 h-16 rounded shadow  w-52 text-center '
-                                value='Internship'
+                                placeholder='Internship'
                             />
                             <input
                                 className='bg-gray-50 h-16 rounded shadow  w-52 text-center '
-                                value='Freelancer'
+                                placeholder='Freelancer'
                             />
                         </div>
                     </div>
@@ -80,34 +80,34 @@ const Jobs = () => {
                             <div>
                                 {' '}
                                 <input
-                                    className='w-full h-12 pl-3 text-lg text-gray-300'
+                                    className='w-full h-12 pl-3 text-lg '
                                     type='text'
-                                    value='Start typing desired skills required for this job post'
+                                    placeholder='Start typing desired skills required for this job post'
                                 />
                             </div>
-                            <div className='flex text-gray-300'>
+                            <div className='flex '>
                                 < div className="h-11 w-28 mx-3 mt-4 flex">
                                     <input
-                                        className='h-11 w-28 pl-2 bg-gray-50 shadow   text-base capitalize '
-                                        value='skill 1' />
+                                        className='h-11 w-28 pl-2  bg-gray-50  text-base capitalize '
+                                        placeholder='skill 1' />
                                     <input className="h-3 w-3 mt-4 -mx-6" src={vector} alt="display" type="image" />
                                 </div>
                                 < div className="h-11 w-28 mx-3 mt-4 flex">
                                     <input
                                         className='h-11 w-28 pl-2 bg-gray-50 shadow   text-base capitalize '
-                                        value='skill 2' />
+                                        placeholder='skill 2' />
                                     <input className="h-3 w-3 mt-4 -mx-6" src={vector} alt="display" type="image" />
                                 </div>
                                 < div className="h-11 w-28 mx-3 mt-4 flex">
                                     <input
                                         className='h-11 w-28 pl-2 bg-gray-50 shadow   text-base capitalize '
-                                        value='skill 3' />
+                                        placeholder='skill 3' />
                                     <input className="h-3 w-3 mt-4 -mx-6 " src={vector} alt="display" type="image" />
                                 </div>
                                 < div className="h-11 w-28 mx-3 mt-4 flex">
                                     <input
                                         className='h-11 w-28 pl-2 bg-gray-50 shadow   text-base capitalize '
-                                        value='skill 4' />
+                                        placeholder='skill 4' />
                                     <input className="h-3 w-3 mt-4 -mx-6" src={vector} alt="display" type="image" />
                                 </div>
 
@@ -122,13 +122,13 @@ const Jobs = () => {
             </lable>
                         <div className='flex space-x-7 ml-28'>
                             <input
-                                className='bg-gray-50 h-16 rounded shadow w-44 text-center text-gray-300'
-                                value='Minimum'
+                                className='bg-gray-50 h-16 rounded shadow w-44 text-center '
+                                placeholder='Minimum'
                             />
                             <p className='pt-4'>to</p>
                             <input
-                                className='bg-gray-50 h-16 rounded shadow w-44 text-center text-gray-300 '
-                                value='Maximum'
+                                className='bg-gray-50 h-16 rounded shadow w-44 text-center  '
+                                placeholder='Maximum'
                             />
                             <p className='pt-4'>years</p>
                         </div>
@@ -137,27 +137,27 @@ const Jobs = () => {
                         <lable className='font-semibold ml-10 pt-5'>Annual Salary</lable>
                         <div className='flex space-x-7 mx-40 pl-1'>
                             <input
-                                className='bg-gray-50 h-16 rounded shadow  w-44 text-center text-gray-300'
-                                value='Minimum'
+                                className='bg-gray-50 h-16 rounded shadow  w-44 text-center '
+                                placeholder='Minimum'
                             />
                             <p className='pt-4'>to</p>
                             <input
-                                className='bg-gray-50 h-16 rounded shadow  w-44 text-center text-gray-300 '
-                                value='Maximum'
+                                className='bg-gray-50 h-16 rounded shadow  w-44 text-center  '
+                                placeholder='Maximum'
                             />
                             <p className='pt-4'>per annum</p>
                         </div>
                     </div>
                     <div className='flex pt-10 '>
-                        <lable className='font-semibold pt-2 ml-10'>Job Description</lable>
+                        <lable className='font-semibold  ml-10'>Job Description</lable>
                         <div className='bg-gray-50 h-28 rounded shadow w-1/2 ml-36'>
-                            <div className='h-14 pt-2 pl-4 pr-32'>
-                                <p className='text-left text-gray-300'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <div className='h-28  w-full'>
+                                <input className='bg-gray-50 text-justify h-28 w-full '
+                                   placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Viverra urna mattis egestas vitae sem. Porttitor sed enim,
                                     convallis risus purus sit amet. Mauris, id interdum
-                                    pellentesque nunc aenean massa arcu.
-                </p>
+                                    pellentesque nunc aenean massa arcu.'
+                />
                             </div>
                         </div>
                     </div>
