@@ -24,7 +24,7 @@ export const Home = () => {
                         <img src={icon} style={{ height: 100, width: 100 }} />
 
                         <div className="flex flex-col">
-                            <b className="font-poppins text-2xl p-3"> Rohit Balodi </b>
+                            <b className="font-poppins text-2xl"> Rohit Balodi </b>
 
                             <p className=" text-black font-semibold text-xs pl-3 mr-5"> lorem lipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>

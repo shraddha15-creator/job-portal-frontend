@@ -2,6 +2,7 @@ import { Header } from "../components/Header";
 import { Applications } from "./Applications";
 import { Assesments } from "./Assessments";
 import { Home } from "./Home";
+import { Recruit } from "./Recruit";
 
 import SavedJobs from "./SavedJobs";
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component = {Home} />
+        <Route path="/recruit" component = { Recruit } />
         <Route path="/saved" component={SavedJobs} />
         <Route path="/applications" component={Applications} />
         <Route path="/assesments" component={Assesments} />
