@@ -2,53 +2,59 @@ import { connect } from "react-redux";
 //import { saveJob, unsaveJob } from '../../redux/actions/jobActions';
 
 
-export const JobCard = ({job}) => {
+import companyLogo from "../../assets/companyLogo.png";
+import heart from "../../assets/heart.png";
+import checked from "../../assets/checked.png";
+import people from "../../assets/people.png";
 
-    const { jobTitle, companyName, date, companyLogo,id } =  job;
+export const JobCard = ({ jobTitle, companyName, logo, skills, employees, details }) => {
 
-    //const isSaved = savedJobs.filter(savedJob => savedJob.id === id).length > 0;
-
-    return (<div className="bg-white shadow-dm  w-full h-full mr-8  p-4">
-        
-        <div className="flex  ">
-            <div className="flex">
-
-
-
-                {/*<div className="border-2 h-12 w-12 text-center mt-2">logo</div>*/}
-                <div className="shadow-2xl w-10 h-10  mt-2 ml-2   "><img src="https://www.spamweed.com/wp-content/uploads/2017/02/site.png " class="rounded-3xl justify-center"></img></div>
-                <div className="ml-4  flex flex-col">
-                    <div className="flex  space-x-96 ">
-                    <div className="font-semibold text-sm mt-2 text-red-500">{jobTitle}</div>
-                    <div className=" underline text-xs px-10 "><p>203 Applications</p></div>
+    return (
+        <div className="bg-white border-b-2 border-r-2 border-l-2 border-solid border-gray-200 w-full ">
+            <div className="flex  justify-between items-center">
+                    
+                   <div className="flex">
+                    
+                    <div className="rounded-full p-4">
+                        <img src={companyLogo} style={{ height: 60, width: 60, borderRadius: 50 }} />
                     </div>
-                    <div className="flex space-x-2">
- 
- 
-                         <div className="font-thin text-xs flex mt-2 ">{date}</div>
-
-
-
-
-
-
+                    <div className="ml-4 justify-around flex flex-col">
+                        <div className="font-semibold text-red-500 pt-6">{jobTitle}</div>
+                        <div className="flex flex-row space-x-4 mt-3 font-semibold text-sm text-black ">{companyName}
+                            <img src={people} style={{
+                                marginTop: 4,
+                                marginLeft: 8, 
+                                height: 15,
+                                width: 18,
+                                left: 5,
+                                top: 5,
+                            }} />
+                            <p className=" font-normal text-xs text-gray-600 mt-1 ml-8">{employees}</p>
+                        </div>
+                        <p className="text-gray-600 pt-4">lorem lipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div className="flex w-86 mr-20 flex-wrap pt-3 ">{details.map(detail =><div className=" font-medium text-sm pr-3" >{detail} </div>)}
+                            <p className="flex ml-28  pb-5 text-red-500 font-normal text-sm"> 1 Day </p>
+                        </div>
+                               
                     </div>
+                </div>
 
+                {/* <div className="flex space-x-4 ">{skills.map(skill =><div className="bg-blue-200 rounded-md p-2 text-blue-900 font-semibold">{skill}</div> )}</div> */}
 
-                    <div className="flex space-x-3 text-xs mt-2 mb-4 " ><p>Edit</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-                        </svg>
-                        <p>Pause</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <p>Delete</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                        </svg>
-                    </div>
-                    <div className="border-b-2 border-red-500  px-4 "></div>
+                <div className="flex flex-col space-y-20 mr-4 my-2">
+                    <img src={checked} style={{
+                        height: 25,
+                        width:25,
+                        left: 2.25,
+                        top: 2.4000244140625,
+                    }} />
+
+                    <img src={heart} style={{
+                        height: 22,
+                        width: 25,
+                        left: 2.25,
+                        top: 3.75,
+                    }} />
 
                 </div>
 
@@ -56,11 +62,8 @@ export const JobCard = ({job}) => {
 
 
             </div>
-            {/*<div className="flex space-x-4">{skills.map(skill => <div className="bg-yellow-200 p-2 rounded-lg text-yellow-700">{skill}</div>)}</div>
-            <div> {isSaved ? <button onClick={() => unsaveJob(job)}>unsave</button> : 
-                
-                <button onClick={() => saveJob(job)}>save</button>
-                }</div>*/}
         </div>
-    </div>)
+    )
 }
+
+
