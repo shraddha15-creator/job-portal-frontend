@@ -4,9 +4,7 @@ import rectangle3 from '../assets/icons/Rectangle3.png';
 import rectangle4 from '../assets/icons/Rectangle4.png';
 import vector from '../assets/icons/Vector.png';
 
-
-
-const Jobs = () => {
+const AddJob = () => {
     return (
         <div className='w-screen h-screen bg-gray-300'>
             <div className='bg-white ml-7 h-60 w-100 mr-7 rounded border-t-2'>
@@ -176,4 +174,4 @@ const Jobs = () => {
         </div>
     );
 };
-export default Jobs;
+export default AddJob;
