@@ -1,5 +1,5 @@
 import {JobCard} from "../components/JobCard";
-import Header2 from "../components/Header2";
+import Header2 from "../components/JobsHeader";
 import { connect } from "react-redux";
 
 export const MyJobs = ({ jobs }) => {
