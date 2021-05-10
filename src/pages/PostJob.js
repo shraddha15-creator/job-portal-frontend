@@ -115,9 +115,9 @@ const PostJob = () => {
                         </div>
                     </div>
                     <div className='pt-10 flex'>
-                        <lable className='font-semibold ml-10 pt-5'>
+                        <label className='font-semibold ml-10 pt-5'>
                             Experience Required
-            </lable>
+                        </label>
                         <div className='flex space-x-7 ml-28'>
                             <input
                                 className='bg-gray-50 h-16 rounded shadow w-44 text-center '
@@ -147,15 +147,15 @@ const PostJob = () => {
                         </div>
                     </div>
                     <div className='flex pt-10 '>
-                        <lable className='font-semibold  ml-10'>Job Description</lable>
+                        <label className='font-semibold  ml-10'>Job Description</label>
                         <div className='bg-gray-50 h-28 rounded shadow w-1/2 ml-36'>
                             <div className='h-28  w-full'>
-                                <input className='bg-gray-50 text-justify h-28 w-full '
-                                   placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <textarea className='bg-gray-50 text-justify h-28 w-full '
+                                    placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Viverra urna mattis egestas vitae sem. Porttitor sed enim,
                                     convallis risus purus sit amet. Mauris, id interdum
                                     pellentesque nunc aenean massa arcu.'
-                />
+                                />
                             </div>
                         </div>
                     </div>
