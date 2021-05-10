@@ -9,11 +9,15 @@ export const Header = () => {
                 <img src="https://ialabs.co.in/wp-content/uploads/2020/10/Dark_logo.png" />
                 </p>
                 <nav className="space-x-10 capitalize text-black  font-smibold pt-6">
-                    {/* <Link to="about" className="hover:text-red-500 p-2"> About </Link>    */}
-                    <Link to="jobs" className="hover:text-red-500 p-2"> Jobs </Link>
+                    <Link to="/" className="hover:text-red-500 p-2"> Home </Link>   
+                    <Link to="/jobs" className="hover:text-red-500 p-2"> Jobs </Link>
                     <Link to="/recruit" className="hover:text-red-500"> Recruit </Link>
                     <Link to="/blogs" className="hover:text-red-500"> Blogs </Link>
-                    <button to="/postjob" className=" bg-red-500 p-2 rounded-lg text-white "> Post a Job </button>
+                    <Link to="/postjob" className="hover:text-red-500"> 
+                        <button className=" bg-red-500 p-2 rounded-lg text-white "> Post a Job </button>
+                    </Link>
+
+                    
                 </nav>
             </div>
         </header>
