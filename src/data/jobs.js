@@ -1,29 +1,49 @@
 export const JOBS_DATA = [
     {
         id: 1,
-        jobTitle: "Fronted Developer",
-        companyName: "IA Labs",
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
         companyLogo: "ialabs.png",
         skills: ["React", "Node", "Javascript"]
     },
     {
         id: 2,
-        jobTitle: "Full Stack Developer",
-        companyName: "IA Labs",
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
         companyLogo: "ialabs.png",
         skills: ["React", "Node", "Javascript"]
     },
     {
-        id: 3,
-        jobTitle: "Backend Developer",
-        companyName: "IA Labs",
+        id: 2,
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
         companyLogo: "ialabs.png",
         skills: ["React", "Node", "Javascript"]
     },
     {
-        id: 4,
-        jobTitle: "Devops Developer",
-        companyName: "IA Labs",
+        id: 2,
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
+        companyLogo: "ialabs.png",
+        skills: ["React", "Node", "Javascript"]
+    },
+    {
+        id: 2,
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
+        companyLogo: "ialabs.png",
+        skills: ["React", "Node", "Javascript"]
+    },
+    {
+        id: 2,
+        companyName: "Nearsure Agency",
+        jobTitle: "Android Developer",
+        date:".Jobs Posted on 28 February 2021",
         companyLogo: "ialabs.png",
         skills: ["React", "Node", "Javascript"]
     }
