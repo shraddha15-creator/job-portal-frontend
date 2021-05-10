@@ -1,8 +1,8 @@
 import { Header } from "../components/Header";
-import AddJob from "./AddJob";
+import PostJob from "./PostJob";
 import { Applications } from "./Applications";
 import { Assesments } from "./Assessments";
-import Home from "./Home";
+import {Home} from "./Home";
 import  MyJobs  from "./MyJobs";
 import SavedJobs from "./SavedJobs";
 import { Recruit } from "./Recruit";
@@ -16,7 +16,7 @@ function App() {
       
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/add-a-job" component={AddJob}/>
+        <Route path="/postjob" component={PostJob}/>
         <Route path="/recruit" component = { Recruit } />
         <Route path="/saved" component={SavedJobs} />
         <Route path="/applications" component={Applications} />

@@ -1,20 +1,20 @@
-import {JobCard} from "../components/JobCard";
-import Header2 from "../components/JobsHeader";
+import { JobListingCard } from "../components/JobListingCard";
+import JobsHeader from "../components/JobsHeader";
 import { connect } from "react-redux";
 
 export const MyJobs = ({ jobs }) => {
     return (<div>
-        <Header2 />
+        <JobsHeader />
 
-       { jobs.map(job=> <JobCard job={job} key={job.id}/>)}
-        
+        { jobs.map(job => <JobListingCard job={job} key={job.id} />)}
+
     </div>
     )
 }
 
 const mapStateToProps = (state) => {
     return ({
-       jobs:  state.allJobs
+        jobs: state.allJobs
     })
 }
 
