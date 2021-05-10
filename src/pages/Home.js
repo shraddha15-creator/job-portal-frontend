@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import JobCard from "../components/JobCard"
+// import JobCard from "../components/JobCard"
 import { SideListItem } from "../components/SideList/SideListItem"
 
 const Home = ({ allJobs }) => {
@@ -16,7 +16,8 @@ const Home = ({ allJobs }) => {
 
             </div>
             <div className="w-2/5 h-auto space-y-4">
-                {allJobs.map(job => <JobCard job={job} key={job.id}/>)}
+                all jobs
+                {/* {allJobs.map(job => <JobCard job={job} key={job.id}/>)} */}
             </div>
             <div className="w-2/5 h-auto space-y-4">
                 Srikanth Section JobDetails component
