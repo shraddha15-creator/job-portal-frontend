@@ -57,12 +57,14 @@ export const Home = () => {
                     </div>
 
                     <div className="flex flex-row justify-around h-auto space-x-6 text-black font-semibold">
-                        <div className="flex w-full border-solid border-4 rounded-md border-red-500 px-6 py-2 mx-6  ">UI/UX Developer
-                            <img
-                                className="w-"
-                                src={dropdown}
-                                alt="dropdown"
-                            />
+                        <div className="flex flex-wrap justify-between w-full border-solid border-4 rounded-md border-red-500 px-6 py-2 mx-6  ">UI/UX Developer
+                            <img src={dropdown} 
+                                 style={{ 
+                                 height: 10,
+                                 width: 15,
+                                 paddingTop: 4       
+                                 }} />
+                
                         </div>
                         <div className="flex w-full border-solid border-4 rounded-md border-red-500 px-6 py-2 mx-6 ">Noida </div>
                     </div>
