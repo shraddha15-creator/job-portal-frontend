@@ -11,7 +11,7 @@ const { Switch, Route } = require("react-router");
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App font-poppins"> 
       <Header />
       <Switch>
         <Route exact path="/" component = {Home} />
