@@ -46,7 +46,7 @@ const PostJob = () => {
                         <input
                             className='bg-gray-50 h-16 rounded shadow w-2/5 ml-52 pl-1 text-lg outline-none  '
                             type='text'
-                            placeholder='UX Designer, Python Developer, Business Developer  etc.'
+                            placeholder='UX Designer,Python Developer,Business Developer etc.'
                         />
                     </div>
                     <div className='flex pt-10 justify-bet sm:pt-4'>
@@ -72,8 +72,8 @@ const PostJob = () => {
                             />
                         </div>
                     </div>
-                    <div className='flex pt-10 '>
-                        <label className='font-semibold pt-2 ml-10'>Skills Requried</label>
+                    <div className='flex pt-10 sm:ml-4 '>
+                        <label className='font-semibold pt-2 ml-6'>Skills Requried</label>
                         <div className='bg-gray-50 h-32 rounded shadow w-3/5 text-xs  ml-40  divide-y divide-black '>
                             <div>
                                 {' '}
@@ -84,10 +84,10 @@ const PostJob = () => {
                                 />
                             </div>
                             <div className='flex '>
-                                < div className="h-11 w-28 mx-3 mt-4 flex">
-                                    <div className="h-11 w-28 shadow">
+                                < div className="h-11 w-auto mx-3 mt-4 flex">
+                                    <div className="h-11 w-full shadow ">
                                         <input
-                                            className='h-11 w-20 pl-2 outline-none bg-gray-50  text-base capitalize '
+                                            className='h-11 w-28 pl-2 outline-none bg-gray-50  text-base capitalize '
                                             placeholder='skill 1' />
                                     </div>
                                     <div>
@@ -124,10 +124,7 @@ const PostJob = () => {
                                         <input className="h-3 w-3 mt-4 -mx-6 outline-none" src={vector} alt="display" type="image" />
                                     </div>
                                 </div>
-
-
-
-                            </div>
+                          </div>
                         </div>
                     </div>
                     <div className='pt-10 flex'>
@@ -149,7 +146,7 @@ const PostJob = () => {
                     </div>
                     <div className='pt-10 flex'>
                         <label className='font-semibold ml-10 pt-5'>Annual Salary</label>
-                        <div className='flex space-x-7 mx-40 pl-1'>
+                        <div className='flex space-x-7 mx-40 pl-2'>
                             <input
                                 className='bg-gray-50 h-16 rounded shadow  w-44 text-center outline-none'
                                 placeholder='Minimum'

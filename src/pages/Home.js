@@ -3,6 +3,7 @@ import { JobCard } from "../components/JobCard"
 import icon from '..//assets/UserProfile.png';
 import { SideListItem } from "../components/SideList/SideListItem"
 import logo from "../assets/Frame.png";
+import rightlogo from "../assets/icons/image.png"
 
 // import companyLogo from "../assets/companyLogo";
 
@@ -30,15 +31,14 @@ export const Home = () => {
                     <button className="bg-red-500 p-2 ml-20 w-auto text-white font-semibold rounded-lg "> Edit Profile </button>
                 </div>
 
-
-                <div className="divide-y-2 mt-7 divide-gray-300 border-gray-300 border-solid border-2 rounded">
-                    <SideListItem title={"Assesments"} />
-                    <SideListItem title={"All Jobs"} url="/" />
-                    <SideListItem title={"Saved"} url="/saved" />
+               <div className="grid grid-cols-1 divide-y divide-gray-300 border-gray-300 border-solid border-2 rounded mt-4">
+                    <SideListItem title={"Assesments"}/>
+                    <SideListItem title={"All Jobs"} url="/"/>
+                    <SideListItem title={"Saved"} url="/saved"/>
                     <SideListItem title={"Applications"} />
-
                 </div>
             </div>
+
             {/* *********************middle panel************ */}
             <div className=" mr-2 w-4/5">
 
@@ -90,8 +90,8 @@ export const Home = () => {
                         <div className="h-8 w-8 flex items-center justify-center ml-10 -my-3.5">
                             <img
                                 className="w-full h-full rounded-full"
-                                src=""
-                                alt=""
+                                src={rightlogo}
+                                alt="Display"
                             />
                         </div>
 

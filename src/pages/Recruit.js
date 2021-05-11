@@ -2,7 +2,7 @@ import { RECRUITERS_DATA } from "../data/Recruiters";
 
 import logo from "../assets/Frame.png";
 import { JobCard } from "../components/JobCard";
-
+import companyLogo from "../assets/icons/image.png"
 export const Recruit = () => {
     return (
         <div>
@@ -54,7 +54,7 @@ export const Recruit = () => {
                             <div className="h-8 w-8 flex items-center justify-center ml-10 -my-3.5">
                                 <img
                                     className="w-full h-full rounded-full"
-                                    //   src={companyLogo}
+                                      src={companyLogo}
                                     alt=""
                                 />
                             </div>
