@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { JobCard } from "../components/JobCard"
+
 import icon from '..//assets/UserProfile.png';
 import dropdown from "../assets/dropdown.png";
 
@@ -10,6 +10,7 @@ import logo from "../assets/Frame.png";
 // import companyLogo from "../assets/companyLogo";
 
 import { JOBS_DATA } from "../data/jobs";
+
 
 export const Home = () => {
     return (
