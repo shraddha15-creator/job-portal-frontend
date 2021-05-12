@@ -6,8 +6,9 @@ import saveLogo from "../assets/saveLogo.png";
 import applicantBG from "../assets/applicantBG.png";
 import { JobCard } from "../components/JobCard";
 import icon from '..//assets/UserProfile.png';
-import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
+
 import { APPLICANTS_DATA } from "../data/Applicants";
+import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
 
 export const Recruit = () => {
     return (
@@ -15,7 +16,7 @@ export const Recruit = () => {
 
 
             {/* ************left panel*********** */}
-            <div className="container w-1/4 flex flex-col  pl-4 ">
+            <div className="container w-1/4 flex flex-col  pl-4  ">
 
                 <div className="w-auto h-52 pl-2 py-4 space-y-4 shadow bg-white rounded-lg">
 
@@ -31,7 +32,7 @@ export const Recruit = () => {
                     <button className="bg-red-500 p-2 ml-20 w-auto text-white font-semibold rounded-lg "> Edit Profile </button>
                 </div>
 
-                <div className="w-auto p-2 ">
+                <div className="w-auto pt-4 ">
                     <div className="border-gray-800 shadow p-4 rounded"> Job Applications</div>
                     <div className="border-gray-800 shadow p-4 rounded"> Shortlisted Candidates</div>
                     <div className="border-gray-800 shadow p-4 rounded"> On-Hold Candidates</div>
@@ -41,9 +42,9 @@ export const Recruit = () => {
                 </div>
             </div>
             {/* *********************middle panel************ */}
-            <div className="space-x-4 w-4/5">
+            <div className="space-x-1 w-4/5">
 
-                <div className=" w-auto pr-3 h-52  py-4 space-y-4 bg-white shadow rounded-lg ">
+                <div className=" w-3/4 pr-3 h-52  py-4 space-y-4 bg-white shadow rounded-lg ">
                     <div className="shadow flex">
                         <input className="w-full rounded p-2" type="text" placeholder="Search..." />
                         <button className="bg-white w-full h-10 flex justify-end items-center text-gray-500 p-2 ">
@@ -51,16 +52,16 @@ export const Recruit = () => {
                         </button>
                     </div>
 
-                    <div className="flex flex-row justify-around h-auto space-x-6 text-red-500 font-semibold">
-                        <div className="flex w-full  border-2 rounded-md border-red-500 px-6 py-2  ">UI/UX Developer </div>
-                        <div className="flex w-full  border-2 rounded-md border-red-500 px-6 py-2 ">Noida </div>
+                    <div className="flex flex-row justify-around h-auto text-black font-semibold">
+                        <div className="flex flex-wrap justify-between w-full  border-2 rounded-md border-red-500 px-6 py-2 mx-6   ">UI/UX Developer </div>
+                        <div className="flex w-full border-2 rounded-md border-red-500 px-6 py-2 mx-6 ">Noida </div>
                     </div>
-                    <div className="flex justify-center space-y-3 w-full  border-2 rounded-md border-red-500 px-6 py-2 text-red-500 font-semibold"> Filter  </div>
+                    
 
 
                 </div>
 
-                <div className="w-auto h-auto  ">
+                <div className="w-3/4 h-auto pt-4  ">
 
                     <div className="flex flex-row justify-between bg-white text-lg border-gray-200 p-3  border-2">
                         <div>100 Jobs Applications</div>

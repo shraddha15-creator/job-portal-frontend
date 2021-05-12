@@ -10,6 +10,7 @@ import logo from "../assets/Frame.png";
 // import companyLogo from "../assets/companyLogo";
 
 import { JOBS_DATA } from "../data/jobs";
+import { JobCard } from "../components/JobCard";
 
 
 export const Home = () => {
@@ -34,7 +35,7 @@ export const Home = () => {
                     <button className="bg-red-500 p-2 ml-20 w-auto text-white font-semibold rounded-lg "> Edit Profile </button>
                 </div>
 
-                <div className="w-auto p-2 ">
+                <div className="w-auto pt-4 ">
                     <div className="border-gray-800 flex justify-between shadow p-4 rounded"> Assessments
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -47,9 +48,9 @@ export const Home = () => {
                 </div>
             </div>
             {/* *********************middle panel************ */}
-            <div className="space-x-4 w-4/5">
+            <div className="space-x-1 w-3/4">
 
-                <div className=" w-auto px-6 h-52  py-4 space-y-6 bg-white shadow rounded-lg ">
+                <div className=" w-3/4 px-6 h-52  py-4 space-y-6 bg-white shadow rounded ">
                     <div className="shadow flex">
                         <input className="w-full rounded p-2" type="text" placeholder="Search..." />
                         <button className="bg-white w-full h-10  flex justify-end items-center text-gray-500 p-2 ">
@@ -74,7 +75,7 @@ export const Home = () => {
 
                 </div>
 
-                <div className="w-auto h-auto  ">
+                <div className="w-3/4 h-auto pt-4  ">
 
                     <div className="flex flex-row justify-between bg-white text-lg border-gray-200 p-3 border-solid border-2">
                         <div>104 Jobs Available</div>
@@ -170,8 +171,8 @@ export const Home = () => {
                         semper in arcu facilisi elementum laoreet. Nisi pellentesque
               luctus turpis morbi mauris donec.{" "}
                     </p>
-                    <div className="h-">
-                        <button className="bg-red-400 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded ml-44 mt-10">
+                    <div className="">
+                        <button className="bg-red-400 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded ml-28 mt-10">
                             Apply
               </button>
                     </div>
