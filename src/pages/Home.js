@@ -166,15 +166,5 @@ export const Home = () => {
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
     )
 }
