@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { saveJob, unsaveJob } from '../../redux/actions/jobActions';
+//import { saveJob, unsaveJob } from '../../redux/actions/jobActions';
 
 
 import companyLogo from "../../assets/companyLogo.png";
@@ -57,6 +57,10 @@ export const JobCard = ({ jobTitle, companyName, logo, skills, employees, detail
                     }} />
 
                 </div>
+
+
+
+
             </div>
         </div>
     )
