@@ -6,8 +6,9 @@ import saveLogo from "../assets/saveLogo.png";
 import applicantBG from "../assets/applicantBG.png";
 import { JobCard } from "../components/JobCard";
 import icon from '..//assets/UserProfile.png';
-import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
+
 import { APPLICANTS_DATA } from "../data/Applicants";
+import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
 
 export const Recruit = () => {
     return (

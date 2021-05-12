@@ -32,7 +32,7 @@ export const Home = () => {
                     <button className="bg-red-500 p-2 ml-20 w-auto text-white font-semibold rounded-lg "> Edit Profile </button>
                 </div>
 
-                <div className="w-auto p-2 ">
+                <div className="w-auto p-2 pt-4 ">
                     <div className="border-gray-800 shadow-lg border-solid border-2 p-4 rounded"> Assessments</div>
                     <div className="border-gray-800 shadow-lg border-solid border-2 p-4 rounded"> All Jobs</div>
                     <div className="border-gray-800 shadow-lg border-solid border-2 p-4 rounded"> Applications</div>
