@@ -15,7 +15,7 @@ export const JOBS_DATA = [
         jobTitle:"Front End Developer",
         companyName:"IA Labs",
         logo:"ialab.png",
-        date:".Jobs Posted on 28 February 2021",
+        date:"Jobs Posted on 28 February 2021",
         details: [ "Noida", "Full time", "Remote Possible", "₹5L-₹7L" ] ,
         skills: [ "React", "Javascript", "html", "css"],
         employees: "50-100 Employees"
