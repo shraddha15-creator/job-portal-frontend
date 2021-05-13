@@ -11,7 +11,7 @@ const { Switch, Route } = require("react-router");
 
 function App() {
   return (
-    <div className="App font-poppins"> 
+    <div className="App bg-gray-50 font-poppins"> 
       <Header />
       
       <Switch>

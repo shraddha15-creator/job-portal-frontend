@@ -1,67 +1,62 @@
-
-
 import logo from "../assets/Frame.png";
 import applicantPhoto from "../assets/applicant.png";
 import saveLogo from "../assets/saveLogo.png";
 import applicantBG from "../assets/applicantBG.png";
 import { JobCard } from "../components/JobCard";
 import icon from '..//assets/UserProfile.png';
+import search from "../assets/search.png";
 
 import { APPLICANTS_DATA } from "../data/Applicants";
 import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
+import { LeftSideMenu } from "../components/SideList/LeftSideMenu";
 
 export const Recruit = () => {
     return (
-        <div className="flex flex-row pt-4 space-x-4 mx-4 ">
+        <div className="flex flex-row pt-4 ml-10 ">
 
 
             {/* ************left panel*********** */}
-            <div className="container w-1/4 flex flex-col  pl-4 ">
+            <div className=" w-1/4 flex flex-col  pl-4 ">
 
-                <div className="w-auto h-52 pl-2 py-4 space-y-4 shadow bg-white rounded-lg">
+                <div className="w-3/4 h-44  shadow bg-white rounded-sm">
 
-                    <div className="flex flex-row text-red-500 p-3  ">
-                        <img src={icon} style={{ height: 100, width: 100 }} />
+                    <div className="flex flex-row text-blue-900 p-3 pt-4  ">
+                        <img src={icon} style={{ height: 70, width: 100, paddingTop: 4 }} />
 
-                        <div className="flex flex-col">
-                            <b className="font-poppins text-2xl"> Rohit Balodi </b>
+                        <div className="flex flex-col px-2">
+                            <b className="font-poppins text-md pl-6 pt-2"> Rohit Balodi </b>
 
-                            <p className=" text-black font-semibold text-xs pl-3 mr-5"> lorem lipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p className=" text-black font-extralight text-xs pl-6 pt-2 mr-5"> lorem lipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <button className="bg-red-500 p-2 ml-20 w-auto text-white font-semibold rounded-lg "> Edit Profile </button>
+                    <button className="bg-blue-900 p-1 px-10 mx-14 w-auto text-white text-sm font-medium rounded "> Edit Profile </button>
                 </div>
 
-                <div className="w-auto p-2 ">
-                    <div className="border-gray-800 shadow p-4 rounded"> Job Applications</div>
-                    <div className="border-gray-800 shadow p-4 rounded"> Shortlisted Candidates</div>
-                    <div className="border-gray-800 shadow p-4 rounded"> On-Hold Candidates</div>
-                    <div className="border-gray-800 shadow p-4 rounded"> My Jobs </div>
-                    <div className="border-gray-800 shadow p-4 rounded"> Edit Company Profile </div>
-                    <div className="border-gray-800 shadow p-4 rounded"> Applicant Tracker </div>
+                <div className="mt-4 w-3/4">
+                    <LeftSideMenu />
                 </div>
+
             </div>
             {/* *********************middle panel************ */}
-            <div className="space-x-4 w-4/5">
+            <div className="">
 
-                <div className=" w-auto pr-3 h-52  py-4 space-y-4 bg-white shadow rounded-lg ">
+                <div className=" w-5/6 p-3 h-auto  py-4 space-y-4 bg-white shadow rounded-sm ">
                     <div className="shadow flex">
-                        <input className="w-full rounded p-2" type="text" placeholder="Search..." />
-                        <button className="bg-white w-full h-10 flex justify-end items-center text-gray-500 p-2 ">
-                            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png" />
-                        </button>
+                        <img src={search} style={{
+                            height: 25,
+                            width: 25,
+                            margin: 15
+                        }} />
+                        <input className="w-full rounded p-2 px-2" type="text" placeholder="Search..." />
                     </div>
 
-                    <div className="flex flex-row justify-around h-auto space-x-6 text-red-500 font-semibold">
-                        <div className="flex w-full  border-2 rounded-md border-red-500 px-6 py-2  ">UI/UX Developer </div>
-                        <div className="flex w-full  border-2 rounded-md border-red-500 px-6 py-2 ">Noida </div>
+                    <div className="flex flex-row justify-around h-auto space-x-6 text-black text-sm font-semibold">
+                        <div className="flex w-full border-solid border-2 rounded border-blue-900 px-6 py-2  ">UI/UX Developer </div>
+                        <div className="flex w-full border-solid border-2 rounded border-blue-900 px-6 py-2 ">Noida </div>
                     </div>
-                    <div className="flex justify-center space-y-3 w-full  border-2 rounded-md border-red-500 px-6 py-2 text-red-500 font-semibold"> Filter  </div>
-
-
                 </div>
 
-                <div className="w-auto h-auto  ">
+                <div className="container w-5/6 h-auto mt-4 ">
 
                     <div className="flex flex-row justify-between bg-white text-lg border-gray-200 p-3  border-2">
                         <div>100 Jobs Applications</div>
@@ -98,7 +93,7 @@ export const Recruit = () => {
                             />
                         </div>
 
-                        <p className=" flex flex-row capitalize font-semibold text-red-400 text-2xl mx-3">Amit Kumar
+                        <p className=" flex flex-row capitalize font-semibold text-blue-900 text-2xl mx-3">Amit Kumar
                             {/* <img src={saveLogo} style={{
                                 
                                 height: 25,
@@ -150,10 +145,10 @@ export const Recruit = () => {
               luctus turpis morbi mauris donec.{" "}
                     </p>
                     <div className=" flex flex-row space-x-4 justify-between px-4">
-                        <button className="bg-red-400 hover:bg-blue-900 text-white font-bold py-1.5 px-6 rounded ">
+                        <button className="bg-blue-900 hover:bg-red-500 text-white font-bold py-1.5 px-6 rounded ">
                             Shortlisted
                             </button>
-                        <button className="bg-white hover:bg-blue-900 text-red-400  border-4 border-red-400 font-bold py-1.5 px-6 rounded">
+                        <button className="bg-white text-red-500  border-4 border-red-500 font-bold py-1.5 px-6 rounded">
                             Rejected
                             </button>
                     </div>
