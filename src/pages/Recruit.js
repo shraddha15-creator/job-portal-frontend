@@ -10,6 +10,8 @@ import icon from '..//assets/UserProfile.png';
 import { APPLICANTS_DATA } from "../data/Applicants";
 import { ApplicantCard } from "../components/ApplicantCard/ApplicantCard";
 
+import companyLogo from "../assets/icons/image.png"
+
 export const Recruit = () => {
     return (
         <div className="flex flex-row pt-4 space-x-4 mx-4 ">
@@ -94,7 +96,7 @@ export const Recruit = () => {
                             <img
                                 className="w-full h-full rounded-full"
                                 src={applicantPhoto}
-                                alt="photo"
+                                alt="applicant"
                             />
                         </div>
 
@@ -114,53 +116,64 @@ export const Recruit = () => {
                     <div className="space-y-3">
                         <div class="flex mt-8 mr-2 space-x-4">
 
+                            <div className="bg-white-600 flex justify-between h-28">
+                                <div class="space-y-4">
+                                    <div className="h-8 w-8 flex items-center justify-center ml-10 -my-3.5">
+                                        <img
+                                            className="w-full h-full rounded-full"
+                                            src={companyLogo}
+                                            alt=""
+                                        />
+                                    </div>
 
 
 
+                                </div>
+
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-                <div className=" grid grid-cols-3 divide-x divide-gray-300  border-t-2 border-b-2">
-                    <div className=" h-16 pl-2 shadow-sm">
-                        <p className="text-sm font-semibold">Currently Working</p>
-                        <p className="text-xs">Software</p>
-                    </div>
-                    <div className=" h-16 pl-2 shadow-sm">
-                        <p className="text-sm font-semibold">Education</p>
-                        <p className="text-xs mt-4">Graduation...</p>
-                    </div>
-                    <div className=" h-16 pl-2 shadow-sm">
-                        <p className="text-sm font-semibold">current CTC</p>
-                        <p className="text-xs mt-4">RS.5,00,000 P.A</p>
-                    </div>
-                </div>
-                <div className="ml-5 flex-col space-y-8 mt-4">
-                    <p className="h-4 text-lg font-semibold">About</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p className="text-left pr-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                        semper in arcu facilisi elementum laoreet. Nisi pellentesque
-                        luctus turpis morbi mauris donec. Amet leo sed ipsum, mi. Velit
+                        <div className=" grid grid-cols-3 divide-x divide-gray-300  border-t-2 border-b-2">
+                            <div className=" h-16 pl-2 shadow-sm">
+                                <p className="text-sm font-semibold">Currently Working</p>
+                                <p className="text-xs">Software</p>
+                            </div>
+                            <div className=" h-16 pl-2 shadow-sm">
+                                <p className="text-sm font-semibold">Education</p>
+                                <p className="text-xs mt-4">Graduation...</p>
+                            </div>
+                            <div className=" h-16 pl-2 shadow-sm">
+                                <p className="text-sm font-semibold">current CTC</p>
+                                <p className="text-xs mt-4">RS.5,00,000 P.A</p>
+                            </div>
+                        </div>
+                        <div className="ml-5 flex-col space-y-8 mt-4">
+                            <p className="h-4 text-lg font-semibold">About</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p className="text-left pr-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                                semper in arcu facilisi elementum laoreet. Nisi pellentesque
+                                luctus turpis morbi mauris donec. Amet leo sed ipsum, mi. Velit
               tellus, mattis diam ipsum in sed mi.{" "}
-                    </p>
-                    <p className="text-left pr-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                        semper in arcu facilisi elementum laoreet. Nisi pellentesque
+                            </p>
+                            <p className="text-left pr-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                                semper in arcu facilisi elementum laoreet. Nisi pellentesque
               luctus turpis morbi mauris donec.{" "}
-                    </p>
-                    <div className=" flex flex-row space-x-4 justify-between px-4">
-                        <button className="bg-red-400 hover:bg-blue-900 text-white font-bold py-1.5 px-6 rounded ">
-                            Shortlisted
+                            </p>
+                            <div className=" flex flex-row space-x-4 justify-between px-4">
+                                <button className="bg-red-400 hover:bg-blue-900 text-white font-bold py-1.5 px-6 rounded ">
+                                    Shortlisted
                             </button>
-                        <button className="bg-white hover:bg-blue-900 text-red-400  border-4 border-red-400 font-bold py-1.5 px-6 rounded">
-                            Rejected
+                                <button className="bg-white hover:bg-blue-900 text-red-400  border-4 border-red-400 font-bold py-1.5 px-6 rounded">
+                                    Rejected
                             </button>
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
-
-
         </div>
 
     )
