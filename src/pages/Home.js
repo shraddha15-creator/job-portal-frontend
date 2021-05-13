@@ -3,7 +3,10 @@ import { JobCard } from "../components/JobCard"
 import icon from '..//assets/UserProfile.png';
 import search from "../assets/search.png";
 import heart from "../assets/heart.png"
+import { SideListItem } from "../components/SideList/SideListItem"
 import logo from "../assets/Frame.png";
+import rightlogo from "../assets/icons/image.png"
+
 // import companyLogo from "../assets/companyLogo";
 
 import { JOBS_DATA } from "../data/jobs";
@@ -57,7 +60,7 @@ export const Home = () => {
 
                 <div className="container w-5/6 h-auto mt-4 ">
 
-                    <div className="flex flex-row justify-between bg-white text-lg border-gray-200 p-3 border-solid border-2">
+                    <div className="flex justify-between bg-white text-lg rounded-t-lg border-gray-200 mt-3 p-3 border-solid border-2">
                         <div>104 Jobs Available</div>
                         <div> Sort By: Latest </div>
                     </div>
