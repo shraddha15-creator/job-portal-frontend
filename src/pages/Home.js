@@ -18,9 +18,9 @@ export const Home = () => {
 
 
             {/* ************left panel*********** */}
-            <div className=" w-1/4 flex flex-col  pl-4 ">
+            <div className="flex flex-col pl-4 w-72">
 
-                <div className="w-3/4 h-44  shadow bg-white rounded-sm">
+                <div className="h-44 shadow bg-white rounded-sm">
 
                     <div className="flex flex-row text-blue-900 p-3 pt-4  ">
                         <img src={icon} style={{ height: 70, width: 100, paddingTop: 4 }} />
@@ -28,21 +28,21 @@ export const Home = () => {
                         <div className="flex flex-col px-2">
                             <b className="font-poppins text-md pl-6 pt-2"> Rohit Balodi </b>
 
-                            <p className=" text-black font-extralight text-xs pl-6 pt-2 mr-5"> lorem lipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p className=" text-black font-extralight text-xs pl-6 pt-2 mr-5"> lorem lipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <button className="bg-blue-900 p-1 px-10 mx-14 w-auto text-white text-sm font-medium rounded "> Edit Profile </button>
                 </div>
 
-                <div className="mt-4 w-3/4">
+                <div className="mt-4">
                     <LeftSideMenu />
                 </div>
 
             </div>
             {/* *********************middle panel************ */}
-            <div className="">
+            <div className="flex-2">
 
-                <div className=" w-5/6 p-3 h-auto  py-4 space-y-4 bg-white shadow rounded-sm ">
+                <div className=" p-3 h-auto  py-4 space-y-4 bg-white shadow rounded-sm ">
                     <div className="shadow flex">
                         <img src={search} style={{
                             height: 25,
@@ -58,7 +58,7 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <div className="container w-5/6 h-auto mt-4 ">
+                <div className="container h-auto mt-4 ">
 
                     <div className="flex justify-between bg-white text-lg rounded-t-lg border-gray-200 mt-3 p-3 border-solid border-2">
                         <div>104 Jobs Available</div>
@@ -70,11 +70,9 @@ export const Home = () => {
                 </div>
             </div>
 
-
             {/* *********************right panel***************** */}
 
-
-            <div className="w-2/6 h-full bg-white rounded mt-1 pb-4 shadow  ">
+            <div className="flex-1 h-full bg-white rounded mt-1 pb-4 shadow  ">
                 <div className="h-40 ">
                     <img
                         className="w-full h-full rounded-sm"
