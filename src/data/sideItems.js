@@ -43,3 +43,4 @@ export const RecruiterMenu = [
         url: "/saved"
     },
 ]
+
